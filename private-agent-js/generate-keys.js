@@ -20,3 +20,13 @@ async function generateKeys() {
 }
 
 generateKeys();
+
+
+  // console.log(publicKey);
+  // console.log(revocationCertificate);
+
+  writeFileSync("private.pem", privateKey);
+  writeFileSync("public.pem", publicKey);
+}
+
+generateKeys();
